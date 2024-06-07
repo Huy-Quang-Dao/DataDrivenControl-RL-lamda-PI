@@ -59,6 +59,7 @@ for k in 1:f
     x[:, k+1] = A * x[:, k] + B * u[:, k];
 end
 
+
 # Train
 while true 
     global Phi = zeros(Float64, f, f-add);
